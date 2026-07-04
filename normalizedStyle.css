@@ -46,8 +46,23 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+/* 10. Modern Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 4px; /* Gives the underline breathing room */
+  outline: none; /* Prevents double outlines in modern browsers */
+}
+
 /*
-  10. Create a root stacking context
+  11. Create a root stacking context
 */
 #root, #__next {
   isolation: isolate;
