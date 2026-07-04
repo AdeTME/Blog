@@ -55,7 +55,7 @@ h1, h2, h3 {
 }
 
 /* --- Main Content Layout --- */
-#container {
+.container {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -157,4 +157,20 @@ h1, h2, h3 {
 .back-link {
   font-size: 0.95rem;
   color: #8a8aff;
+}
+
+/* --- Links/Citations inside the Post Content --- */
+
+/* Targets only <a> tags inside the post text body */
+.post-content a {
+  text-decoration: underline;
+  text-underline-offset: 3px; /* Gives the underline a little breathing room */
+  text-decoration-color: white; /* Makes the underline slightly transparent/subtle */
+}
+
+/* Enhances the link when the user hovers over the citation */
+.post-content a:hover {
+  color: #fff; /* Light up white on hover */
+  text-decoration-color: #fff; /* Make the underline crisp white too */
+  text-decoration: underline; /* Overrides the global 'none' reset if needed */
 }
