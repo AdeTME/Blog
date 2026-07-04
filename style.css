@@ -1,8 +1,7 @@
-/* --- Global Styles --- */
 body {
   font-family: 'Inter', sans-serif; 
-  background-color: #00001A;
-  color: white;
+  background-color: #001A16;
+  color: #F0F5F3;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -11,10 +10,9 @@ body {
 h1, h2, h3 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
-  color: #e0e0e0; /* Changed from plain 'grey' for better contrast on dark background */
+  color: #e0e0e0; 
 }
 
-/* --- Header & Footer Layout --- */
 .header, .footer {
   width: 100%;
 }
@@ -54,7 +52,6 @@ h1, h2, h3 {
   font-weight: 500;
 }
 
-/* --- Main Content Layout --- */
 .container {
   flex: 1;
   display: flex;
@@ -62,7 +59,6 @@ h1, h2, h3 {
   padding: 2rem 1.5rem;
 }
 
-/* Single class rule instead of 6 separate IDs */
 .post-card {
   display: flex;
   flex-direction: column;
@@ -73,12 +69,10 @@ h1, h2, h3 {
   width: 100%;
 }
 
-/* Automatically removes the border on the very last post dynamically */
 .post-card:last-child {
   border-bottom: 0;
 }
 
-/* --- Individual Post Styling --- */
 
 .post-header {
   margin-bottom: 0.75rem;
@@ -97,10 +91,9 @@ h1, h2, h3 {
   line-height: 1.3;
 }
 
-/* Makes only the title link glow slightly on hover */
 .post-title a:hover {
   color: #fff;
-  text-decoration: none; /* Keeps it clean, overrides global underline if you want */
+  text-decoration: none; 
 }
 
 .post-excerpt {
@@ -113,10 +106,9 @@ h1, h2, h3 {
 .read-more {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #8a8aff; /* A subtle accent color for links */
+  color: #8a8aff; 
 }
 
-/* --- Single Post Page Styles --- */
 
 .single-post {
   margin: 0 auto;
@@ -129,16 +121,15 @@ h1, h2, h3 {
   font-size: 2.5rem;
   line-height: 1.2;
   margin-top: 0.5rem;
-  color: #fff; /* Crisp white for the main headline */
+  color: #fff;
 }
 
-/* This targets every paragraph inside the post body */
 .post-content p {
   font-family: 'Merriweather', serif;
   font-size: 1.2rem;
   line-height: 1.75;
   color: #e0e0e0;
-  margin-bottom: 1.5rem; /* Pushes paragraphs apart naturally without manual spacing */
+  margin-bottom: 1.5rem; 
 }
 
 .post-content h3 {
@@ -159,18 +150,14 @@ h1, h2, h3 {
   color: #8a8aff;
 }
 
-/* --- Links/Citations inside the Post Content --- */
-
-/* Targets only <a> tags inside the post text body */
 .post-content a {
   text-decoration: underline;
-  text-underline-offset: 3px; /* Gives the underline a little breathing room */
-  text-decoration-color: white; /* Makes the underline slightly transparent/subtle */
+  text-underline-offset: 3px; 
+  text-decoration-color: white; 
 }
 
-/* Enhances the link when the user hovers over the citation */
 .post-content a:hover {
-  color: #fff; /* Light up white on hover */
-  text-decoration-color: #fff; /* Make the underline crisp white too */
-  text-decoration: underline; /* Overrides the global 'none' reset if needed */
+  color: #fff; 
+  text-decoration-color: #fff; 
+  text-decoration: underline; 
 }
