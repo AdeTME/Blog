@@ -1,7 +1,7 @@
 body {
   font-family: 'Inter', sans-serif; 
-  background-color: #001A16;
-  color: #F0F5F3;
+  background-color: #E0F4FF;
+  color: black;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -10,7 +10,7 @@ body {
 h1, h2, h3 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
-  color: #e0e0e0; 
+  color: black; 
 }
 
 .header, .footer {
@@ -80,7 +80,7 @@ h1, h2, h3 {
 
 .post-date {
   font-size: 0.85rem;
-  color: #888;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -92,12 +92,12 @@ h1, h2, h3 {
 }
 
 .post-title a:hover {
-  color: #fff;
+  color: #231010;
   text-decoration: none; 
 }
 
 .post-excerpt {
-  color: #ccc;
+  color: black;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -121,14 +121,14 @@ h1, h2, h3 {
   font-size: 2.5rem;
   line-height: 1.2;
   margin-top: 0.5rem;
-  color: #fff;
+  color: black;
 }
 
 .post-content p {
   font-family: 'Merriweather', serif;
   font-size: 1.2rem;
   line-height: 1.75;
-  color: #e0e0e0;
+  color: black;
   margin-bottom: 1.5rem; 
 }
 
@@ -136,7 +136,7 @@ h1, h2, h3 {
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: #fff;
+  color: black;
 }
 
 .single-post-footer {
@@ -153,11 +153,11 @@ h1, h2, h3 {
 .post-content a {
   text-decoration: underline;
   text-underline-offset: 3px; 
-  text-decoration-color: white; 
+  text-decoration-color: black; 
 }
 
 .post-content a:hover {
-  color: #fff; 
-  text-decoration-color: #fff; 
+  color: #231010; 
+  text-decoration-color: black; 
   text-decoration: underline; 
 }
