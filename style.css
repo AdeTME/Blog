@@ -7,6 +7,7 @@
   margin-right: auto;
   width: 100%;
   padding: 1rem 1.5rem; 
+  border-bottom: 1px solid grey;
 }
 
 .navigators {
@@ -14,9 +15,6 @@
   flex-direction: row; 
   gap: 1.5rem; 
 }
-
-
-
 
 
 .footer{
@@ -28,4 +26,27 @@
   margin-right: auto;
   width: 100%;
   padding: 1rem 1.5rem;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif; 
+  background-color: #00001A;
+  color: white;
+}
+
+.siteLogo {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em; 
+}
+
+.navigators a {
+  font-weight: 500;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: grey;
 }
