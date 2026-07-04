@@ -66,7 +66,6 @@ h1, h2, h3 {
 .post-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 2rem 0;
   border-bottom: 1px solid #333;
   margin: 0 auto;
@@ -115,4 +114,47 @@ h1, h2, h3 {
   font-size: 0.9rem;
   font-weight: 500;
   color: #8a8aff; /* A subtle accent color for links */
+}
+
+/* --- Single Post Page Styles --- */
+
+.single-post {
+  margin: 0 auto;
+  max-width: 740px; /* Narrower than the homepage cards because long lines of text are harder to read */
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.single-post-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+  color: #fff; /* Crisp white for the main headline */
+}
+
+/* This targets every paragraph inside the post body */
+.post-content p {
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem; /* Pushes paragraphs apart naturally without manual spacing */
+}
+
+.post-content h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.single-post-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #222;
+}
+
+.back-link {
+  font-size: 0.95rem;
+  color: #8a8aff;
 }
