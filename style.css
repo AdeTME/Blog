@@ -111,7 +111,7 @@ h1, h2, h3 {
 .read-more {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #8a8aff; 
+  color: #1A2F3B; 
 }
 
 
@@ -152,7 +152,7 @@ h1, h2, h3 {
 
 .back-link {
   font-size: 0.95rem;
-  color: #8a8aff;
+  color: #C05640;
 }
 
 .post-content a {
@@ -169,4 +169,63 @@ h1, h2, h3 {
 
 .container section {
   width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;                   
+}
+
+
+.post-card {
+  display: flex;
+  flex-direction: row;       
+  gap: 2.5rem;              
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;       
+}
+
+.post-card:last-child {
+  border-bottom: 0;
+}
+
+.content-image {
+  flex: 0 0 300px;           
+  max-width: 300px;
+  height: 200px;             
+  border-radius: 4px;        
+  overflow: hidden;          
+  background-color: #d1e8f5; 
+}
+
+.content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         
+}
+
+.post-excerpt {
+  color: black;
+  font-size: 1rem;          
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .post-card {
+    flex-direction: column-reverse; 
+    gap: 1.5rem;
+  }
+  
+  .content-image {
+    flex: none;
+    max-width: 100%;
+    width: 100%;                    
+    height: 220px;
+  }
 }
