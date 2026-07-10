@@ -10,9 +10,16 @@ btns.forEach(btn => {
         cards.forEach(card => {
             const answer = card.dataset.tags.toLowerCase().trim();
 
-            if (card.includes(answer)) {
+            if(pick ==="all"){
+                card.style.display = "block";
 
+            } else if (answer.includes(pick)) {
+                card.style.display ="block";
+
+            }  else {
+                card.style.display ="none";
             }
+        
 
         });
 
