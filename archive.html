@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="normalizedStyle.css">
     <link rel="stylesheet" href="style.css">
-    <script src="archive.js"></script>
+    <script src="archive.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <div class="header-inner">
             <div class="siteLogo">iSpyral</div>
             <nav class="navigators">
-                <ul>
+                <ul> </main>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
@@ -29,11 +29,28 @@
         </div>
     </header>
 
-    <main id = "archiveContainer">
+    <main id="archiveContainer">
 
-<section class="post-feed">
 
-            <article class="post-card">
+
+        <div class="legend">
+            <ul>
+                <li><button  data-tag="long">long</button></li>
+                <li><button  data-tag="society">society</button></li>
+                <li><button  data-tag="politics">politics</button></li>
+                <li><button  data-tag="travel">travel</button></li>
+                <li><button  data-tag="personal">personal</button></li>
+                <li><button data-tag="montreal">montreal</button></li>
+                <li><button data-tag="life">life</button></li>
+                <li><button  data-tag="all">All</button></li>
+            </ul>
+        </div>
+
+
+
+        <section class="post-feed">
+
+            <article class="post-card" data-tags="long society politics">
                 <div class="content">
                     <header class="post-header">
                         <span class="post-date">July 7, 2026</span>
@@ -56,7 +73,7 @@
             </article>
 
 
-            <article class="post-card">
+            <article class="post-card" data-tags="long travel personal">
                 <div class="content">
                     <header class="post-header">
                         <span class="post-date">July 14, 2026</span>
@@ -76,7 +93,7 @@
             </article>
 
 
-            <article class="post-card">
+            <article class="post-card" data-tags="Montreal society life">
                 <div class="content">
                     <header class="post-header">
                         <span class="post-date">July 21, 2026</span>
@@ -167,55 +184,14 @@
 
             </article>
 
-            
+
         </section>
 
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    </main>
-
     <footer class="footer">
         <div class="footer-inner">
-            <a href="archive.html">Archive</a>
+            <p>maybe some stuff to put at the bottom of the archive page???</p>
         </div>
     </footer>
 

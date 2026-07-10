@@ -233,3 +233,11 @@ h1, h2, h3 {
 .footer {
   flex-shrink: 0;
 }
+
+.legend  ul{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  gap:10px;
+  margin-top: 10px;
+}
