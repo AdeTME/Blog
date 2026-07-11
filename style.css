@@ -55,7 +55,7 @@ h1, h2, h3 {
 }
 
 .container {
-  flex: 1 0 auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem;
@@ -74,7 +74,7 @@ h1, h2, h3 {
   width: 100%;
 }
 
-.post-card:last-child {
+.post-card.no-border {
   border-bottom: 0;
 }
 
