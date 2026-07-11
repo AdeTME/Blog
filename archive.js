@@ -26,3 +26,4 @@ btns.forEach(btn => {
         updateLastVisible();
     });
 });
+
